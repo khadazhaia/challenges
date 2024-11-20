@@ -3,6 +3,8 @@ import math
 # 1) Given this list, access the "hello" element using multi-dimension indices
 lst = [1, 2, [3, 4], [5, [100, 200, ['hello']], 23, 11], 1, 7]
 
+# print(lst[3][1][2][0])
+
 """
 2) You are driving a little too fast, and a police officer stops you. Write a
 function to return one of 3 possible results: "No ticket", "Small ticket", or
@@ -15,9 +17,21 @@ birthday (encoded as a boolean value in the parameters of the function)
 
 
 def caught_speeding(speed, is_birthday):
-    pass
-
-
+    if is_birthday == False:
+       if speed <= 60:
+             return "No ticket"
+       elif speed > 60 and speed <= 80:
+             return "Small ticket"
+       else:
+             return "Big ticket"
+    else:
+        if speed <= 65:
+            return "No ticket"
+        elif speed > 65 and speed <= 85:
+            return "Small ticket"
+        else:
+            return "Big ticket"
+           
 print(caught_speeding(81, True))
 print(caught_speeding(81, False))
 
@@ -28,8 +42,8 @@ def emailer(word):
     pass
 
 
-print(emailer("test@gmail.com"))
-print(emailer("gmail@gmail.com"))
+# print(emailer("test@gmail.com"))
+# print(emailer("gmail@gmail.com"))
 
 
 # 4a) Create a function called "areacirc" that takes in a radius and
