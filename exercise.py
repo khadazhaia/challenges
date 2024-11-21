@@ -59,12 +59,12 @@ def areaCirc(rad):
 
 # 4b) use this function to calc the area of a circle with a radius of 5
 # (answer should be ~78.5398)
-print(areaCirc(5))
+# print(areaCirc(5))
 
 # 5a) Create a function that converts kilometers to miles
 # there are roughly 1.61 km in one mile
-...
-
-
+def kilo_to_miles(kilo):
+    return kilo * 1.61
+    
 # 5b) use this function to convert 10km to miles
-...
+print(kilo_to_miles(10))
