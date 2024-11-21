@@ -19,18 +19,19 @@ birthday (encoded as a boolean value in the parameters of the function)
 def caught_speeding(speed, is_birthday):
     if is_birthday == False:
        if speed <= 60:
-             return "No ticket"
+           ticket = "No ticket"
        elif speed > 60 and speed <= 80:
-             return "Small ticket"
+           ticket = "Small ticket"
        else:
-             return "Big ticket"
+           ticket = "Big ticket"
     else:
         if speed <= 65:
-             return "No ticket"
+           ticket = "No ticket"
         elif speed > 65 and speed <= 85:
-             return "Small ticket"
+           ticket = "Small ticket"
         else:
-             return "Big ticket"
+           ticket = "Big ticket"
+    return ticket
            
 # print(caught_speeding(81, True))
 # print(caught_speeding(81, False))
@@ -46,20 +47,19 @@ def emailer(word):
     else:
          return word
 
-print(emailer("test@gmail.com"))
-print(emailer("gmail@gmail.com"))
-print(emailer(" "))
+# print(emailer("test@gmail.com"))
+# print(emailer("gmail@gmail.com"))
+# print(emailer(" "))
 
 
 # 4a) Create a function called "areacirc" that takes in a radius and
 # calculates the area
 def areaCirc(rad):
-    math.pi * (rad * 2)
-
+    return round(math.pi * (rad ** 2), 4)
 
 # 4b) use this function to calc the area of a circle with a radius of 5
 # (answer should be ~78.5398)
-...
+print(areaCirc(5))
 
 # 5a) Create a function that converts kilometers to miles
 # there are roughly 1.61 km in one mile
