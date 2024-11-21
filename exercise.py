@@ -26,24 +26,29 @@ def caught_speeding(speed, is_birthday):
              return "Big ticket"
     else:
         if speed <= 65:
-            return "No ticket"
+             return "No ticket"
         elif speed > 65 and speed <= 85:
-            return "Small ticket"
+             return "Small ticket"
         else:
-            return "Big ticket"
+             return "Big ticket"
            
-print(caught_speeding(81, True))
-print(caught_speeding(81, False))
+# print(caught_speeding(81, True))
+# print(caught_speeding(81, False))
 
 
 # 3) Create a function called "emailer" which takes a string and concatenates "@gmail.com" to
 # this string before returning it
 def emailer(word):
-    pass
+    if word == " ":
+         str = input("Please enter a string: ")
+         email = "@gmail.com"
+         return str + email
+    else:
+         return word
 
-
-# print(emailer("test@gmail.com"))
-# print(emailer("gmail@gmail.com"))
+print(emailer("test@gmail.com"))
+print(emailer("gmail@gmail.com"))
+print(emailer(" "))
 
 
 # 4a) Create a function called "areacirc" that takes in a radius and
