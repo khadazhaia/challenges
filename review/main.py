@@ -11,15 +11,16 @@ def remove_domain(email: str) -> str:
     Returns:
         str: The root of the email without the domain address
     """
-    if email == '':
-        return ''
-    elif "@" not in email:
+    if email != str(email):
         return -1
-    else:
-        email = email.split("@")
-        email.pop()
-        email = email[0]
+    elif "@" in email:
+        email = email.split("@").pop(0)
         return email
+    elif email == '':
+        return ''
+   
+
+        
     
 
     
