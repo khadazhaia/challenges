@@ -1,0 +1,6 @@
+type,amount_kg,destination,unit_price
+Robusta,10,US,3.264
+Arabica,100,US,4.473
+Robusta,20,JP,3.293
+Arabica,50,DE,4.573
+Arabica,80,US,4.473
